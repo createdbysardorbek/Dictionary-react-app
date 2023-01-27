@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 736px;
+
+    .mode {
+        display: flex;
+        align-items: center;
+    }
+
+    .toggle {
+        margin: 0 20px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+}
