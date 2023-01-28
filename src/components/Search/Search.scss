@@ -1,0 +1,22 @@
+.searchSec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 733px;
+    height: 64px;
+    background-color: red;
+    padding-right: 24px;
+    box-sizing: border-box;
+    background: #F4F4F4;
+    border-radius: 16px;
+}
+
+.searchSec.dark {
+    background-color: #1F1F1F;
+}
+
+@media only screen and (max-width: 768px) {
+    .searchSec {
+        width: 100%;
+    }
+}
