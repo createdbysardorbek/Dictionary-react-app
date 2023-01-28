@@ -4,6 +4,7 @@ import './App.scss'
 import Header from "../Header/Header";
 import Search from "../Search/Search";
 import WordAudioPro from "../Word-audio-pro/WordAudioPro";
+import NounFormation from "../NounFormation/NounFormation";
 
 const App = () => {
 
@@ -20,12 +21,12 @@ const App = () => {
         setFont(font)
     }
 
-
     return (
         <div className={classNames(`body`, { dark: theme })}>
             <Header changeFont={changeFont} changeTheme={changeTheme} theme={theme} font={font} />
             <Search theme={theme} font={font} />
             <WordAudioPro font={font} theme={theme} />
+            <NounFormation font={font} theme={theme} />
         </div>
     )
 
