@@ -1,0 +1,58 @@
+.audioSec {
+    display: flex;
+    justify-content: space-between;
+    width: 736px;
+    height: fit-content;
+    margin-bottom: 40px;
+
+    .words {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .audio {
+        display: flex;
+        justify-content: end;
+        width: max-content;
+        height: 100px;
+
+        .audioPlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 75px;
+            height: 75px;
+            background: #A445ED;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .audioSec {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .audioSec {
+        
+        .audio {
+            align-items: center;
+            .audioPlay {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .words {
+            Word {
+                font-size: 32px;
+            }
+        }
+    }
+}

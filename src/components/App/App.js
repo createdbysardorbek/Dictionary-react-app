@@ -3,25 +3,29 @@ import classNames from "classnames";
 import './App.scss'
 import Header from "../Header/Header";
 import Search from "../Search/Search";
+import WordAudioPro from "../Word-audio-pro/WordAudioPro";
 
 const App = () => {
 
     let [theme, setTheme] = useState(false);
-    let [font, setFont] = useState('sans-serif')
+    let [font, setFont] = useState('sans-serif');
 
-    function changeTheme () {
+
+
+    function changeTheme() {
         setTheme(!theme)
     }
 
-    function changeFont (font) {
+    function changeFont(font) {
         setFont(font)
     }
 
 
     return (
-        <div className={classNames(`body`, {dark: theme})}>
+        <div className={classNames(`body`, { dark: theme })}>
             <Header changeFont={changeFont} changeTheme={changeTheme} theme={theme} font={font} />
             <Search theme={theme} font={font} />
+            <WordAudioPro font={font} theme={theme} />
         </div>
     )
 
