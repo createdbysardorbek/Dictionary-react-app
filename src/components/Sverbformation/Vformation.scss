@@ -1,0 +1,56 @@
+.synonym_sec {
+    display: flex;
+    width: 736px;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.vform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 736px;
+    height: fit-content;
+    margin: 0 auto;
+
+    margin-bottom: 40px;
+
+    .line {
+        width: 656px;
+        height: 1px;
+        background-color: #E9E9E9;
+    }
+
+}
+
+.meaning {
+    width: 736px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 736px) {
+    .synonym_sec {
+        width: 100%;
+        padding: 0 39px;
+        box-sizing: border-box;
+    }
+
+    .vform {
+        width: 100%;
+        padding: 0 39px;
+        box-sizing: border-box;
+
+        .line {
+            width: 70%;
+        }
+    }
+
+    .meaning {
+        width: 100%;
+        padding: 0 39px;
+        box-sizing: border-box;
+    }
+}
